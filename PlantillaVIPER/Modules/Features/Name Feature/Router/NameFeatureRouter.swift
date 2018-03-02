@@ -38,8 +38,8 @@ class NameFeatureRouter: NSObject, NameFeatureRouterProtocol {
     
     func presentInterfaceFromWindow(window: UIWindow) {
         
-        let mainStoryboard: UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
-        self.viewController = mainStoryboard.instantiateViewController(withIdentifier: "vcNameFeature") as! NameFeatureViewController
+        let mainStoryboard: UIStoryboard = UIStoryboard(name:KeyManager.mainStoryboard, bundle: nil)
+        self.viewController = mainStoryboard.instantiateViewController(withIdentifier: KeyManager.vcNameFeature) as! NameFeatureViewController
         self.viewController.presenter = self.presenter
         self.presenter.view = self.viewController
         self.presenter.interactor = self.interactor

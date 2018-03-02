@@ -28,9 +28,12 @@
 		0C709A9E204801F000D9F217 /* NameFeatureInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C709A9D204801F000D9F217 /* NameFeatureInteractor.swift */; };
 		0C709AA0204816AA00D9F217 /* DataManagerLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C709A9F204816AA00D9F217 /* DataManagerLocal.swift */; };
 		0C709AA2204816D500D9F217 /* DataManagerLocalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C709AA1204816D500D9F217 /* DataManagerLocalProtocol.swift */; };
+		0C709AAD2049662C00D9F217 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C709AAC2049662C00D9F217 /* KeyManager.swift */; };
+		97BBDA09DAA31491D46A8257 /* Pods_PlantillaVIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5304CE523FDB95EDD2044 /* Pods_PlantillaVIPER.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		027D564D33627D8FA30CD466 /* Pods-PlantillaVIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantillaVIPER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlantillaVIPER/Pods-PlantillaVIPER.debug.xcconfig"; sourceTree = "<group>"; };
 		0C2358DB2046BB30006919CF /* PlantillaVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantillaVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2358DE2046BB30006919CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C2358E02046BB30006919CF /* NameFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFeatureViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +57,9 @@
 		0C709A9D204801F000D9F217 /* NameFeatureInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFeatureInteractor.swift; sourceTree = "<group>"; };
 		0C709A9F204816AA00D9F217 /* DataManagerLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerLocal.swift; sourceTree = "<group>"; };
 		0C709AA1204816D500D9F217 /* DataManagerLocalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerLocalProtocol.swift; sourceTree = "<group>"; };
+		0C709AAC2049662C00D9F217 /* KeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
+		78865E979B17923279106C00 /* Pods-PlantillaVIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantillaVIPER.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantillaVIPER/Pods-PlantillaVIPER.release.xcconfig"; sourceTree = "<group>"; };
+		C7F5304CE523FDB95EDD2044 /* Pods_PlantillaVIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantillaVIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BBDA09DAA31491D46A8257 /* Pods_PlantillaVIPER.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +79,8 @@
 			children = (
 				0C2358DD2046BB30006919CF /* PlantillaVIPER */,
 				0C2358DC2046BB30006919CF /* Products */,
+				44AD2DCB7DC29C9CFCB77D07 /* Pods */,
+				8D316DF2C4A2FCA111840AD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				0C709A7D204703C100D9F217 /* LoadManager.swift */,
+				0C709AAC2049662C00D9F217 /* KeyManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -312,6 +322,23 @@
 			path = "Name Feature";
 			sourceTree = "<group>";
 		};
+		44AD2DCB7DC29C9CFCB77D07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				027D564D33627D8FA30CD466 /* Pods-PlantillaVIPER.debug.xcconfig */,
+				78865E979B17923279106C00 /* Pods-PlantillaVIPER.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D316DF2C4A2FCA111840AD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7F5304CE523FDB95EDD2044 /* Pods_PlantillaVIPER.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,9 +346,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C2358ED2046BB30006919CF /* Build configuration list for PBXNativeTarget "PlantillaVIPER" */;
 			buildPhases = (
+				D91C4D6799A607FCA87AC96F /* [CP] Check Pods Manifest.lock */,
 				0C2358D72046BB30006919CF /* Sources */,
 				0C2358D82046BB30006919CF /* Frameworks */,
 				0C2358D92046BB30006919CF /* Resources */,
+				D8D6DAB62F18753464D77245 /* [CP] Embed Pods Frameworks */,
+				AF8C17B0840CED8E6EAAFEC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -380,6 +410,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF8C17B0840CED8E6EAAFEC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlantillaVIPER/Pods-PlantillaVIPER-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8D6DAB62F18753464D77245 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlantillaVIPER/Pods-PlantillaVIPER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D91C4D6799A607FCA87AC96F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlantillaVIPER-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C2358D72046BB30006919CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -390,6 +471,7 @@
 				0C2358E12046BB30006919CF /* NameFeatureViewController.swift in Sources */,
 				0C709A942047FEFC00D9F217 /* NameFeatureRouter.swift in Sources */,
 				0C709A862047112300D9F217 /* DataManagerServiceProtocol.swift in Sources */,
+				0C709AAD2049662C00D9F217 /* KeyManager.swift in Sources */,
 				0C709A9C204800D700D9F217 /* NameFeatureInteractorProtocol.swift in Sources */,
 				0C709A7E204703C100D9F217 /* LoadManager.swift in Sources */,
 				0C709A962047FF0800D9F217 /* NameFeatureRouterProtocol.swift in Sources */,
@@ -536,6 +618,7 @@
 		};
 		0C2358EE2046BB30006919CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 027D564D33627D8FA30CD466 /* Pods-PlantillaVIPER.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +634,7 @@
 		};
 		0C2358EF2046BB30006919CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78865E979B17923279106C00 /* Pods-PlantillaVIPER.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
