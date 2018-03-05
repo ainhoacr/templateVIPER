@@ -12,6 +12,6 @@ import UIKit
     Manage color of application
  */
 
-class ColorCoordinator: NSObject {
+class ColorCoordinator: UIColor {
 
 }
