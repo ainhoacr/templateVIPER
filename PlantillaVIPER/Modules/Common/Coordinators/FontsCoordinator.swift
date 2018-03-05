@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FontsCoordinator: NSObject {
+class FontsCoordinator: UIFont {
     class func fontBold(ofSize:CGFloat) -> UIFont {
         return UIFont.boldSystemFont(ofSize: ofSize)
     }
