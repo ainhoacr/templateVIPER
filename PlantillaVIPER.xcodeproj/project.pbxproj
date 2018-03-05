@@ -29,6 +29,7 @@
 		0C709AA0204816AA00D9F217 /* DataManagerLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C709A9F204816AA00D9F217 /* DataManagerLocal.swift */; };
 		0C709AA2204816D500D9F217 /* DataManagerLocalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C709AA1204816D500D9F217 /* DataManagerLocalProtocol.swift */; };
 		0C709AAD2049662C00D9F217 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C709AAC2049662C00D9F217 /* KeyManager.swift */; };
+		0CCC4BE5204D4E44008B8D29 /* FontsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC4BE4204D4E44008B8D29 /* FontsCoordinator.swift */; };
 		97BBDA09DAA31491D46A8257 /* Pods_PlantillaVIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5304CE523FDB95EDD2044 /* Pods_PlantillaVIPER.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		0C709A9F204816AA00D9F217 /* DataManagerLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerLocal.swift; sourceTree = "<group>"; };
 		0C709AA1204816D500D9F217 /* DataManagerLocalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerLocalProtocol.swift; sourceTree = "<group>"; };
 		0C709AAC2049662C00D9F217 /* KeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
+		0CCC4BE4204D4E44008B8D29 /* FontsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsCoordinator.swift; sourceTree = "<group>"; };
 		78865E979B17923279106C00 /* Pods-PlantillaVIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantillaVIPER.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantillaVIPER/Pods-PlantillaVIPER.release.xcconfig"; sourceTree = "<group>"; };
 		C7F5304CE523FDB95EDD2044 /* Pods_PlantillaVIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantillaVIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -191,6 +193,7 @@
 			children = (
 				0C709A792047038700D9F217 /* LanguageCoordinator.swift */,
 				0C709A7B204703AE00D9F217 /* ColorCoordinator.swift */,
+				0CCC4BE4204D4E44008B8D29 /* FontsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				0C2358DF2046BB30006919CF /* AppDelegate.swift in Sources */,
 				0C709A9A2047FFCD00D9F217 /* NameFeaturePresenter.swift in Sources */,
 				0C709A9E204801F000D9F217 /* NameFeatureInteractor.swift in Sources */,
+				0CCC4BE5204D4E44008B8D29 /* FontsCoordinator.swift in Sources */,
 				0C709AA2204816D500D9F217 /* DataManagerLocalProtocol.swift in Sources */,
 				0C709A922047FDDE00D9F217 /* NameFeatureViewControllerProtocol.swift in Sources */,
 				0C709A982047FFB500D9F217 /* NameFeaturePresenterProtocol.swift in Sources */,
